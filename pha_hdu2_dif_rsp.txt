@@ -1,0 +1,140 @@
+Comparing table content...
+
+================================================================================
+FITS FILES COMPARISON
+File 1: pha_out_gbm111/n7_sp14.rsp
+File 2: pha_out/n7_sp14.rsp
+================================================================================
+
+[1] HEADER COMPARISON:
+----------------------------------------
+
+[WARNING] Keys only in pha_out_gbm111/n7_sp14.rsp:
+   INFILE02: None
+   INFILE03: None
+   INFILE01: None
+
+[WARNING] Keys only in pha_out/n7_sp14.rsp:
+   TUNIT6: cm^2
+   TUNIT2: keV
+   TUNIT1: keV
+
+[WARNING] Differences in common key values:
+
+   Key: TFORM1
+     pha_out_gbm111/n7_sp14.rsp: D
+     pha_out/n7_sp14.rsp: 1E
+
+   Key: PCOUNT
+     pha_out_gbm111/n7_sp14.rsp: 48732
+     pha_out/n7_sp14.rsp: 72240
+
+   Key: TSTART
+     pha_out_gbm111/n7_sp14.rsp: 779934567.852108
+     pha_out/n7_sp14.rsp: 779934552.2604
+
+   Key: MJDREFF
+     pha_out_gbm111/n7_sp14.rsp: 7.428703703703703e-4
+     pha_out/n7_sp14.rsp: 0.0007428703703703703
+
+   Key: NAXIS1
+     pha_out_gbm111/n7_sp14.rsp: 42
+     pha_out/n7_sp14.rsp: 34
+
+   Key: TSTOP
+     pha_out_gbm111/n7_sp14.rsp: 779934567.852108
+     pha_out/n7_sp14.rsp: 779934599.3653
+
+   Key: DATE-END
+     pha_out_gbm111/n7_sp14.rsp: 2025-09-19T00:29:22
+     pha_out/n7_sp14.rsp: 2025-09-19T00:31:03.549
+
+   Key: HDUVERS
+     pha_out_gbm111/n7_sp14.rsp: 1.2.1
+     pha_out/n7_sp14.rsp: 1.3.0
+
+   Key: EXTVER
+     pha_out_gbm111/n7_sp14.rsp: 1
+     pha_out/n7_sp14.rsp: 4
+
+   Key: TFORM3
+     pha_out_gbm111/n7_sp14.rsp: I
+     pha_out/n7_sp14.rsp: 1I
+
+   Key: TFORM2
+     pha_out_gbm111/n7_sp14.rsp: D
+     pha_out/n7_sp14.rsp: 1E
+
+   Key: DATE-OBS
+     pha_out_gbm111/n7_sp14.rsp: 2025-09-19T00:29:22
+     pha_out/n7_sp14.rsp: 2025-09-19T00:30:16.444
+
+   Key: FILTER
+     pha_out_gbm111/n7_sp14.rsp: None
+     pha_out/n7_sp14.rsp: none
+
+   Key: RSP_NUM
+     pha_out_gbm111/n7_sp14.rsp: 1
+     pha_out/n7_sp14.rsp: 4
+
+
+[2] TABLE STRUCTURE COMPARISON:
+----------------------------------------
+
+Columns in pha_out_gbm111/n7_sp14.rsp: ['ENERG_LO', 'ENERG_HI', 'N_GRP', 'F_CHAN', 'N_CHAN', 'MATRIX']
+Columns in pha_out/n7_sp14.rsp: ['ENERG_LO', 'ENERG_HI', 'N_GRP', 'F_CHAN', 'N_CHAN', 'MATRIX']
+
+[WARNING] Data type differences:
+   Column 'ENERG_LO':
+     pha_out_gbm111/n7_sp14.rsp: D
+     pha_out/n7_sp14.rsp: 1E
+   Column 'N_GRP':
+     pha_out_gbm111/n7_sp14.rsp: I
+     pha_out/n7_sp14.rsp: 1I
+   Column 'ENERG_HI':
+     pha_out_gbm111/n7_sp14.rsp: D
+     pha_out/n7_sp14.rsp: 1E
+
+[WARNING] Unit differences:
+   Column 'ENERG_LO':
+     pha_out_gbm111/n7_sp14.rsp: None
+     pha_out/n7_sp14.rsp: keV
+   Column 'MATRIX':
+     pha_out_gbm111/n7_sp14.rsp: None
+     pha_out/n7_sp14.rsp: cm^2
+   Column 'ENERG_HI':
+     pha_out_gbm111/n7_sp14.rsp: None
+     pha_out/n7_sp14.rsp: keV
+
+
+[3] TABLE CONTENT COMPARISON:
+----------------------------------------
+
+Row count in pha_out_gbm111/n7_sp14.rsp: 140
+Row count in pha_out/n7_sp14.rsp: 140
+
+[WARNING] Found 1 column(s) with differences:
+
+   Column 'N_CHAN' (dtype: object):
+     Number of differences: 78
+     First 20 differences:
+       Row 0: pha_out_gbm111/n7_sp14.rsp=[3], pha_out/n7_sp14.rsp=[128]
+       Row 1: pha_out_gbm111/n7_sp14.rsp=[4], pha_out/n7_sp14.rsp=[128]
+       Row 2: pha_out_gbm111/n7_sp14.rsp=[5], pha_out/n7_sp14.rsp=[128]
+       Row 3: pha_out_gbm111/n7_sp14.rsp=[6], pha_out/n7_sp14.rsp=[128]
+       Row 4: pha_out_gbm111/n7_sp14.rsp=[7], pha_out/n7_sp14.rsp=[128]
+       Row 5: pha_out_gbm111/n7_sp14.rsp=[7], pha_out/n7_sp14.rsp=[128]
+       Row 6: pha_out_gbm111/n7_sp14.rsp=[8], pha_out/n7_sp14.rsp=[128]
+       Row 7: pha_out_gbm111/n7_sp14.rsp=[9], pha_out/n7_sp14.rsp=[128]
+       Row 8: pha_out_gbm111/n7_sp14.rsp=[10], pha_out/n7_sp14.rsp=[128]
+       Row 9: pha_out_gbm111/n7_sp14.rsp=[10], pha_out/n7_sp14.rsp=[128]
+       Row 10: pha_out_gbm111/n7_sp14.rsp=[11], pha_out/n7_sp14.rsp=[128]
+       Row 11: pha_out_gbm111/n7_sp14.rsp=[12], pha_out/n7_sp14.rsp=[128]
+       Row 12: pha_out_gbm111/n7_sp14.rsp=[13], pha_out/n7_sp14.rsp=[128]
+       Row 13: pha_out_gbm111/n7_sp14.rsp=[14], pha_out/n7_sp14.rsp=[128]
+       Row 14: pha_out_gbm111/n7_sp14.rsp=[15], pha_out/n7_sp14.rsp=[128]
+       Row 15: pha_out_gbm111/n7_sp14.rsp=[16], pha_out/n7_sp14.rsp=[128]
+       Row 16: pha_out_gbm111/n7_sp14.rsp=[17], pha_out/n7_sp14.rsp=[128]
+       Row 17: pha_out_gbm111/n7_sp14.rsp=[18], pha_out/n7_sp14.rsp=[128]
+       Row 18: pha_out_gbm111/n7_sp14.rsp=[19], pha_out/n7_sp14.rsp=[128]
+       Row 19: pha_out_gbm111/n7_sp14.rsp=[20], pha_out/n7_sp14.rsp=[128]

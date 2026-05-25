@@ -1,0 +1,104 @@
+Comparing table content...
+
+================================================================================
+FITS FILES COMPARISON
+File 1: pha_out_gbm111/n7_sp14.pha
+File 2: pha_out/n7_sp14.pha
+================================================================================
+
+[1] HEADER COMPARISON:
+----------------------------------------
+
+[WARNING] Keys only in pha_out_gbm111/n7_sp14.pha:
+   EXTVER: 1
+   TIMEUNIT: s
+   ERR_RAD: 3.5
+   DATE-OBS: 2025-09-19T00:29:22
+   POISSERR: True
+   OBSERVER: Meegan
+   EQUINOX: 2000.0
+   TELESCOP: GLAST
+   DETNAM: NAI_07
+   TRIGTIME: 779934537.284108
+   TSTART: 779934567.7161081
+   MJDREFF: 7.428703703703703e-4
+   RADECSYS: FK5
+   TIMESYS: TT
+   MJDREFI: 51910
+   INSTRUME: GBM
+   OBJECT: GRB250919020
+   DATATYPE: None
+   DATE-END: 2025-09-19T00:29:22
+   TSTOP: 779934567.988108
+   RA_OBJ: 275.2333
+   ORIGIN: GIOC
+   DEC_OBJ: -62.667
+
+[WARNING] Keys only in pha_out/n7_sp14.pha:
+   POISERR: True
+   TSCAL2: 1
+   TZERO2: 32768
+   TUNIT2: count
+
+[WARNING] Differences in common key values:
+
+   Key: FILTER
+     pha_out_gbm111/n7_sp14.pha: None
+     pha_out/n7_sp14.pha: 
+
+   Key: TFORM1
+     pha_out_gbm111/n7_sp14.pha: I
+     pha_out/n7_sp14.pha: 1I
+
+   Key: BACKFILE
+     pha_out_gbm111/n7_sp14.pha: n7_sp14.bak
+     pha_out/n7_sp14.pha: 
+
+   Key: CORRFILE
+     pha_out_gbm111/n7_sp14.pha: none
+     pha_out/n7_sp14.pha: 
+
+   Key: RESPFILE
+     pha_out_gbm111/n7_sp14.pha: None
+     pha_out/n7_sp14.pha: 
+
+   Key: ANCRFILE
+     pha_out_gbm111/n7_sp14.pha: none
+     pha_out/n7_sp14.pha: 
+
+   Key: EXPOSURE
+     pha_out_gbm111/n7_sp14.pha: 0.2588595999999985
+     pha_out/n7_sp14.pha: 0.25885959999999847
+
+   Key: TFORM3
+     pha_out_gbm111/n7_sp14.pha: I
+     pha_out/n7_sp14.pha: 1I
+
+
+[2] TABLE STRUCTURE COMPARISON:
+----------------------------------------
+
+Columns in pha_out_gbm111/n7_sp14.pha: ['CHANNEL', 'COUNTS', 'QUALITY']
+Columns in pha_out/n7_sp14.pha: ['CHANNEL', 'COUNTS', 'QUALITY']
+
+[WARNING] Data type differences:
+   Column 'QUALITY':
+     pha_out_gbm111/n7_sp14.pha: I
+     pha_out/n7_sp14.pha: 1I
+   Column 'CHANNEL':
+     pha_out_gbm111/n7_sp14.pha: I
+     pha_out/n7_sp14.pha: 1I
+
+[WARNING] Unit differences:
+   Column 'COUNTS':
+     pha_out_gbm111/n7_sp14.pha: None
+     pha_out/n7_sp14.pha: count
+
+
+[3] TABLE CONTENT COMPARISON:
+----------------------------------------
+
+Row count in pha_out_gbm111/n7_sp14.pha: 128
+Row count in pha_out/n7_sp14.pha: 128
+
+[OK] Table contents are identical
