@@ -3,133 +3,145 @@ Comparing table content...
 ================================================================================
 FITS FILES COMPARISON
 File 1: pha_out_gbm111/n7_sp14.bak
-File 2: pha_out/n7_sp14.bak
+File 2: pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak
 ================================================================================
 
 [1] HEADER COMPARISON:
 ----------------------------------------
 
 [WARNING] Keys only in pha_out_gbm111/n7_sp14.bak:
-   INSTRUME: GBM
-   RADECSYS: FK5
-   OBSERVER: Meegan
-   RA_OBJ: None
-   TIMESYS: TT
-   DETNAM: NAI_07
-   ORIGIN: GIOC
    DATE-OBS: 2025-09-19T00:29:22
-   POISSERR: False
-   OBJECT: None
-   DEC_OBJ: None
    TSTOP: 779934567.9761081
-   EXTVER: 1
-   MJDREFF: 7.428703703703703e-4
-   MJDREFI: 51910
-   ERR_RAD: None
-   TSTART: 779934567.720108
-   TELESCOP: GLAST
-   EQUINOX: 2000.0
+   RA_OBJ: None
+   POISSERR: False
+   DETNAM: NAI_07
    TRIGTIME: 779934537.284108
+   MJDREFF: 7.428703703703703e-4
+   OBSERVER: Meegan
+   DEC_OBJ: None
+   EXTVER: 1
+   TSTART: 779934567.720108
+   TIMESYS: TT
+   MJDREFI: 51910
+   RADECSYS: FK5
+   ERR_RAD: None
+   EQUINOX: 2000.0
+   DATATYPE: None
+   OBJECT: None
+   ORIGIN: GIOC
    TIMEUNIT: s
    DATE-END: 2025-09-19T00:29:22
-   DATATYPE: None
 
-[WARNING] Keys only in pha_out/n7_sp14.bak:
-   TUNIT3: count/s
+[WARNING] Keys only in pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak:
+   TSCAL2: 1
    POISERR: True
-   TUNIT2: count/s
+   TUNIT2: count
+   TUNIT3: count
+   TZERO2: 32768
 
 [WARNING] Differences in common key values:
 
-   Key: TFORM1
-     pha_out_gbm111/n7_sp14.bak: I
-     pha_out/n7_sp14.bak: 1I
-
-   Key: CORRFILE
-     pha_out_gbm111/n7_sp14.bak: none
-     pha_out/n7_sp14.bak: 
-
    Key: TTYPE2
      pha_out_gbm111/n7_sp14.bak: RATE
-     pha_out/n7_sp14.bak: RATES
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: COUNTS
+
+   Key: NAXIS1
+     pha_out_gbm111/n7_sp14.bak: 18
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 10
+
+   Key: INSTRUME
+     pha_out_gbm111/n7_sp14.bak: GBM
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 
 
    Key: TFORM3
      pha_out_gbm111/n7_sp14.bak: D
-     pha_out/n7_sp14.bak: 1D
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: E
 
-   Key: FILTER
-     pha_out_gbm111/n7_sp14.bak: None
-     pha_out/n7_sp14.bak: 
-
-   Key: ANCRFILE
+   Key: CORRFILE
      pha_out_gbm111/n7_sp14.bak: none
-     pha_out/n7_sp14.bak: 
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 
 
    Key: BACKFILE
      pha_out_gbm111/n7_sp14.bak: None
-     pha_out/n7_sp14.bak: 
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 
 
    Key: TFORM2
      pha_out_gbm111/n7_sp14.bak: D
-     pha_out/n7_sp14.bak: 1D
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: J
+
+   Key: FILTER
+     pha_out_gbm111/n7_sp14.bak: None
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 
+
+   Key: ANCRFILE
+     pha_out_gbm111/n7_sp14.bak: none
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 
+
+   Key: TELESCOP
+     pha_out_gbm111/n7_sp14.bak: GLAST
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 
 
    Key: RESPFILE
      pha_out_gbm111/n7_sp14.bak: None
-     pha_out/n7_sp14.bak: 
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 
+
+   Key: TFORM1
+     pha_out_gbm111/n7_sp14.bak: I
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 1I
 
 
 [2] TABLE STRUCTURE COMPARISON:
 ----------------------------------------
 
 Columns in pha_out_gbm111/n7_sp14.bak: ['CHANNEL', 'RATE', 'STAT_ERR']
-Columns in pha_out/n7_sp14.bak: ['CHANNEL', 'RATES', 'STAT_ERR']
+Columns in pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: ['CHANNEL', 'COUNTS', 'STAT_ERR']
 
 [WARNING] Columns only in pha_out_gbm111/n7_sp14.bak: ['RATE']
 
-[WARNING] Columns only in pha_out/n7_sp14.bak: ['RATES']
+[WARNING] Columns only in pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: ['COUNTS']
 
 [WARNING] Data type differences:
-   Column 'CHANNEL':
-     pha_out_gbm111/n7_sp14.bak: I
-     pha_out/n7_sp14.bak: 1I
    Column 'STAT_ERR':
      pha_out_gbm111/n7_sp14.bak: D
-     pha_out/n7_sp14.bak: 1D
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: E
+   Column 'CHANNEL':
+     pha_out_gbm111/n7_sp14.bak: I
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 1I
 
 [WARNING] Unit differences:
    Column 'STAT_ERR':
      pha_out_gbm111/n7_sp14.bak: None
-     pha_out/n7_sp14.bak: count/s
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: count
 
 
 [3] TABLE CONTENT COMPARISON:
 ----------------------------------------
 
 Row count in pha_out_gbm111/n7_sp14.bak: 128
-Row count in pha_out/n7_sp14.bak: 128
+Row count in pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak: 128
 
 [WARNING] Found 1 column(s) with differences:
 
    Column 'STAT_ERR' (dtype: >f8):
-     Number of differences: 125
+     Number of differences: 128
      First 20 differences:
-       Row 0: pha_out_gbm111/n7_sp14.bak=0.04317372829374194, pha_out/n7_sp14.bak=0.04317372829374183
-       Row 1: pha_out_gbm111/n7_sp14.bak=0.08531674086390915, pha_out/n7_sp14.bak=0.0853167408639093
-       Row 2: pha_out_gbm111/n7_sp14.bak=0.0972917022845655, pha_out/n7_sp14.bak=0.097291702284566
-       Row 3: pha_out_gbm111/n7_sp14.bak=0.11343264404617015, pha_out/n7_sp14.bak=0.11343264404617026
-       Row 4: pha_out_gbm111/n7_sp14.bak=0.12463561841767874, pha_out/n7_sp14.bak=0.12463561841767812
-       Row 6: pha_out_gbm111/n7_sp14.bak=0.15755004490964253, pha_out/n7_sp14.bak=0.15755004490964308
-       Row 7: pha_out_gbm111/n7_sp14.bak=0.1890806639281212, pha_out/n7_sp14.bak=0.18908066392812123
-       Row 8: pha_out_gbm111/n7_sp14.bak=0.1982493835372727, pha_out/n7_sp14.bak=0.1982493835372714
-       Row 9: pha_out_gbm111/n7_sp14.bak=0.20581167617880924, pha_out/n7_sp14.bak=0.20581167617881033
-       Row 10: pha_out_gbm111/n7_sp14.bak=0.2023499753929612, pha_out/n7_sp14.bak=0.20234997539296107
-       Row 11: pha_out_gbm111/n7_sp14.bak=0.20521314086716871, pha_out/n7_sp14.bak=0.20521314086716816
-       Row 12: pha_out_gbm111/n7_sp14.bak=0.20529530114574623, pha_out/n7_sp14.bak=0.2052953011457466
-       Row 13: pha_out_gbm111/n7_sp14.bak=0.19736394130846116, pha_out/n7_sp14.bak=0.19736394130845986
-       Row 14: pha_out_gbm111/n7_sp14.bak=0.2059400833223925, pha_out/n7_sp14.bak=0.20594008332239222
-       Row 15: pha_out_gbm111/n7_sp14.bak=0.1936709178579719, pha_out/n7_sp14.bak=0.19367091785797236
-       Row 16: pha_out_gbm111/n7_sp14.bak=0.1925498086778664, pha_out/n7_sp14.bak=0.19254980867786584
-       Row 17: pha_out_gbm111/n7_sp14.bak=0.1867581040034243, pha_out/n7_sp14.bak=0.18675810400342233
-       Row 18: pha_out_gbm111/n7_sp14.bak=0.1765723018622794, pha_out/n7_sp14.bak=0.17657230186227976
-       Row 19: pha_out_gbm111/n7_sp14.bak=0.16917019440875372, pha_out/n7_sp14.bak=0.16917019440875436
-       Row 20: pha_out_gbm111/n7_sp14.bak=0.17704060087000997, pha_out/n7_sp14.bak=0.17704060087001014
+       Row 0: pha_out_gbm111/n7_sp14.bak=0.04317372829374194, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=2.9411745
+       Row 1: pha_out_gbm111/n7_sp14.bak=0.08531674086390915, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=5.8121324
+       Row 2: pha_out_gbm111/n7_sp14.bak=0.0972917022845655, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=6.627917
+       Row 3: pha_out_gbm111/n7_sp14.bak=0.11343264404617015, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=7.727505
+       Row 4: pha_out_gbm111/n7_sp14.bak=0.12463561841767874, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=8.490699
+       Row 5: pha_out_gbm111/n7_sp14.bak=0.1463213062674755, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=9.968019
+       Row 6: pha_out_gbm111/n7_sp14.bak=0.15755004490964253, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=10.732966
+       Row 7: pha_out_gbm111/n7_sp14.bak=0.1890806639281212, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=12.880964
+       Row 8: pha_out_gbm111/n7_sp14.bak=0.1982493835372727, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=13.505576
+       Row 9: pha_out_gbm111/n7_sp14.bak=0.20581167617880924, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=14.020751
+       Row 10: pha_out_gbm111/n7_sp14.bak=0.2023499753929612, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=13.784925
+       Row 11: pha_out_gbm111/n7_sp14.bak=0.20521314086716871, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=13.979976
+       Row 12: pha_out_gbm111/n7_sp14.bak=0.20529530114574623, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=13.985573
+       Row 13: pha_out_gbm111/n7_sp14.bak=0.19736394130846116, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=13.445255
+       Row 14: pha_out_gbm111/n7_sp14.bak=0.2059400833223925, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=14.029498
+       Row 15: pha_out_gbm111/n7_sp14.bak=0.1936709178579719, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=13.193671
+       Row 16: pha_out_gbm111/n7_sp14.bak=0.1925498086778664, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=13.117297
+       Row 17: pha_out_gbm111/n7_sp14.bak=0.1867581040034243, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=12.722742
+       Row 18: pha_out_gbm111/n7_sp14.bak=0.1765723018622794, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=12.028842
+       Row 19: pha_out_gbm111/n7_sp14.bak=0.16917019440875372, pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.bak=11.52458

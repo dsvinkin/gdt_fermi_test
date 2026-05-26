@@ -3,7 +3,7 @@ Comparing table content...
 ================================================================================
 FITS FILES COMPARISON
 File 1: pha_out_gbm111/n7_sp14.pha
-File 2: pha_out/n7_sp14.pha
+File 2: pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha
 ================================================================================
 
 [1] HEADER COMPARISON:
@@ -11,94 +11,101 @@ File 2: pha_out/n7_sp14.pha
 
 [WARNING] Keys only in pha_out_gbm111/n7_sp14.pha:
    EXTVER: 1
-   TIMEUNIT: s
-   ERR_RAD: 3.5
-   DATE-OBS: 2025-09-19T00:29:22
-   POISSERR: True
-   OBSERVER: Meegan
-   EQUINOX: 2000.0
-   TELESCOP: GLAST
-   DETNAM: NAI_07
-   TRIGTIME: 779934537.284108
-   TSTART: 779934567.7161081
-   MJDREFF: 7.428703703703703e-4
-   RADECSYS: FK5
-   TIMESYS: TT
    MJDREFI: 51910
-   INSTRUME: GBM
-   OBJECT: GRB250919020
-   DATATYPE: None
+   TIMEUNIT: s
    DATE-END: 2025-09-19T00:29:22
    TSTOP: 779934567.988108
-   RA_OBJ: 275.2333
+   POISSERR: True
+   RADECSYS: FK5
    ORIGIN: GIOC
+   EQUINOX: 2000.0
+   DETNAM: NAI_07
+   TSTART: 779934567.7161081
+   MJDREFF: 7.428703703703703e-4
+   DATE-OBS: 2025-09-19T00:29:22
+   TRIGTIME: 779934537.284108
+   OBSERVER: Meegan
+   TIMESYS: TT
+   RA_OBJ: 275.2333
+   DATATYPE: None
    DEC_OBJ: -62.667
+   ERR_RAD: 3.5
+   OBJECT: GRB250919020
 
-[WARNING] Keys only in pha_out/n7_sp14.pha:
-   POISERR: True
-   TSCAL2: 1
+[WARNING] Keys only in pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha:
+   TTYPE4: QUALITY
    TZERO2: 32768
    TUNIT2: count
+   TUNIT3: count
+   TSCAL2: 1
+   POISERR: False
+   TFORM4: 1I
 
 [WARNING] Differences in common key values:
 
+   Key: RESPFILE
+     pha_out_gbm111/n7_sp14.pha: None
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: none
+
+   Key: NAXIS1
+     pha_out_gbm111/n7_sp14.pha: 8
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: 12
+
+   Key: TTYPE3
+     pha_out_gbm111/n7_sp14.pha: QUALITY
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: STAT_ERR
+
+   Key: TFIELDS
+     pha_out_gbm111/n7_sp14.pha: 3
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: 4
+
    Key: FILTER
      pha_out_gbm111/n7_sp14.pha: None
-     pha_out/n7_sp14.pha: 
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: none
 
    Key: TFORM1
      pha_out_gbm111/n7_sp14.pha: I
-     pha_out/n7_sp14.pha: 1I
-
-   Key: BACKFILE
-     pha_out_gbm111/n7_sp14.pha: n7_sp14.bak
-     pha_out/n7_sp14.pha: 
-
-   Key: CORRFILE
-     pha_out_gbm111/n7_sp14.pha: none
-     pha_out/n7_sp14.pha: 
-
-   Key: RESPFILE
-     pha_out_gbm111/n7_sp14.pha: None
-     pha_out/n7_sp14.pha: 
-
-   Key: ANCRFILE
-     pha_out_gbm111/n7_sp14.pha: none
-     pha_out/n7_sp14.pha: 
-
-   Key: EXPOSURE
-     pha_out_gbm111/n7_sp14.pha: 0.2588595999999985
-     pha_out/n7_sp14.pha: 0.25885959999999847
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: 1I
 
    Key: TFORM3
      pha_out_gbm111/n7_sp14.pha: I
-     pha_out/n7_sp14.pha: 1I
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: E
+
+   Key: EXPOSURE
+     pha_out_gbm111/n7_sp14.pha: 0.2588595999999985
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: 0.25885959999999847
+
+   Key: BACKFILE
+     pha_out_gbm111/n7_sp14.pha: n7_sp14.bak
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: none
 
 
 [2] TABLE STRUCTURE COMPARISON:
 ----------------------------------------
 
 Columns in pha_out_gbm111/n7_sp14.pha: ['CHANNEL', 'COUNTS', 'QUALITY']
-Columns in pha_out/n7_sp14.pha: ['CHANNEL', 'COUNTS', 'QUALITY']
+Columns in pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: ['CHANNEL', 'COUNTS', 'STAT_ERR', 'QUALITY']
+
+[WARNING] Columns only in pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: ['STAT_ERR']
 
 [WARNING] Data type differences:
    Column 'QUALITY':
      pha_out_gbm111/n7_sp14.pha: I
-     pha_out/n7_sp14.pha: 1I
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: 1I
    Column 'CHANNEL':
      pha_out_gbm111/n7_sp14.pha: I
-     pha_out/n7_sp14.pha: 1I
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: 1I
 
 [WARNING] Unit differences:
    Column 'COUNTS':
      pha_out_gbm111/n7_sp14.pha: None
-     pha_out/n7_sp14.pha: count
+     pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: count
 
 
 [3] TABLE CONTENT COMPARISON:
 ----------------------------------------
 
 Row count in pha_out_gbm111/n7_sp14.pha: 128
-Row count in pha_out/n7_sp14.pha: 128
+Row count in pha_out_main_core_7abfee8_fermi_7fb502d/n7_sp14.pha: 128
 
 [OK] Table contents are identical

@@ -415,8 +415,10 @@ def main():
     )
     parser.add_argument("file1", help="Path to first FITS file")
     parser.add_argument("file2", help="Path to second FITS file")
-    parser.add_argument("--hdu", type=int, default=1, 
-                       help="HDU number to compare (default: 1)")
+    parser.add_argument("--hdu1", type=int, default=1, 
+                       help="HDU number in the file1 to compare (default: 1)")
+    parser.add_argument("--hdu2", type=int, default=1, 
+                       help="HDU number in the file1 to compare (default: 1)")
     parser.add_argument("--ignore-keys", nargs='+', 
                        default=['COMMENT', 'HISTORY', 'CHECKSUM', 'DATASUM', 'DATE'],
                        help="Keys to ignore during header comparison")
@@ -435,17 +437,17 @@ def main():
         # Open FITS files
         with fits.open(args.file1) as hdul1, fits.open(args.file2) as hdul2:
             # Check if HDU exists
-            if args.hdu >= len(hdul1):
-                print(f"Error: HDU {args.hdu} does not exist in {args.file1}")
+            if args.hdu1 >= len(hdul1):
+                print(f"Error: HDU {args.hdu1} does not exist in {args.file1}")
                 sys.exit(1)
-            if args.hdu >= len(hdul2):
-                print(f"Error: HDU {args.hdu} does not exist in {args.file2}")
+            if args.hdu2 >= len(hdul2):
+                print(f"Error: HDU {args.hdu2} does not exist in {args.file2}")
                 sys.exit(1)
             
             # Compare headers
             header_result = compare_headers(
-                hdul1[args.hdu].header, 
-                hdul2[args.hdu].header,
+                hdul1[args.hdu1].header, 
+                hdul2[args.hdu2].header,
                 name1=args.file1,
                 name2=args.file2,
                 ignore_keys=args.ignore_keys
@@ -455,12 +457,12 @@ def main():
             table_result = None
             content_result = None
             
-            if (isinstance(hdul1[args.hdu], (fits.BinTableHDU, fits.TableHDU)) and
-                isinstance(hdul2[args.hdu], (fits.BinTableHDU, fits.TableHDU))):
+            if (isinstance(hdul1[args.hdu1], (fits.BinTableHDU, fits.TableHDU)) and
+                isinstance(hdul2[args.hdu2], (fits.BinTableHDU, fits.TableHDU))):
                 
                 table_result = compare_table_structure(
-                    hdul1[args.hdu],
-                    hdul2[args.hdu],
+                    hdul1[args.hdu1],
+                    hdul2[args.hdu2],
                     name1=args.file1,
                     name2=args.file2
                 )
@@ -469,8 +471,8 @@ def main():
                 if args.compare_content:
                     print("Comparing table content...")
                     content_result = compare_table_content(
-                        hdul1[args.hdu],
-                        hdul2[args.hdu],
+                        hdul1[args.hdu1],
+                        hdul2[args.hdu2],
                         name1=args.file1,
                         name2=args.file2,
                         max_rows=args.max_rows,

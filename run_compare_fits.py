@@ -30,11 +30,20 @@ def main():
 
     sp = 'sp14'
     det  = 'n7'
-    fits_type = 'rsp'
-   
-    str_sys = f"python3 compare_fits_deep.py pha_out_gbm111/{det}_{sp}.{fits_type} pha_out/{det}_{sp}.{fits_type} "+\
-        " --hdu 2 --compare-content --tolerance=1e-3 --max-rows=20" 
-    os.system(str_sys)
+    
+    for fits_type in lst_types:
+
+        hdu_old = 2 
+        hdu_new = 2 
+
+        if fits_type == 'pha' or fits_type == 'bak':
+            hdu_old = 2 
+            hdu_new = 1 
+        
+        str_sys = f"python3 compare_fits_deep.py"+\
+            f" pha_out_gbm111/{det}_{sp}.{fits_type} pha_out_main_core_7abfee8_fermi_7fb502d/{det}_{sp}.{fits_type} "+\
+            f" --hdu1={hdu_old} --hdu2={hdu_new} --compare-content --tolerance=1e-3 --max-rows=20 > pha_hdu2_dif_{fits_type}.txt" 
+        os.system(str_sys)
 
 
 main()

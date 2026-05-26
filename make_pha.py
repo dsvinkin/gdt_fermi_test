@@ -138,6 +138,8 @@ def main():
         'sp10_18': (28.388, 33.252),
     }
 
+    path_out = 'pha_out_main_core_7abfee8_fermi_7fb502d'
+
     time_res_src = 0.016
 
     dic_time_res_bg = {'n7': 1.024*4, 'b1': 1.024*10}
@@ -163,7 +165,7 @@ def main():
             bkgd = backfitter.interpolate_bins(phaii_bg.data.tstart, phaii_bg.data.tstop)
             lc_bkgd = bkgd.integrate_energy(*rng[1])
             lc_data = phaii_bg.to_lightcurve(energy_range=rng[1])
-            fig_name = f'figures/bg_{det}_{rng[0]}'
+            fig_name = f'{path_out}/figures/bg_{det}_{rng[0]}'
             str_title = f'{det} {rng[0]} bg fit {poly_order=}'
             plot_lc(lc_data, fig_name, str_title, y_lim, bg_data=lc_bkgd)
       
@@ -177,12 +179,12 @@ def main():
 
         src_lc = phaii_src.to_lightcurve(time_range=sp_src_int, energy_range=erange)
 
-        fig_name = f'figures/src_{det}_{lst_ranges[0][0]}'
+        fig_name = f'{path_out}/figures/src_{det}_{lst_ranges[0][0]}'
         str_title = f'{det}\nenergy range: {lst_ranges[0][1]} keV\ntime range: {sp_src_int} s\nbg fit {poly_order=}'
         x_rng = (30,32)
         plot_lc(lc_data, fig_name, str_title, y_lim=None, bg_data=lc_bkgd, src_lc=src_lc, x_range=x_rng)
 
-        spectrum_name = f'pha_out/{det}_{sp_name}'
+        spectrum_name = f'{path_out}/{det}_{sp_name}'
         pha, bak = make_spectrum(phaii_src, bkgd, sp_src_int, dic_sp_erange[det], spectrum_name)
 
         rsp = GbmRsp2.open(f'data/glg_cspec_{det}_bn{name}_v02.rsp2')
