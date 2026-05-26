@@ -15,7 +15,7 @@ The resulting files can be loaded to XSPEC version: 12.15.0 with minor warnings
 ```
 
 The count spectrum and response-convolved model looks reasonable.
-However, after grouping spectrum (e.g. by >20 counts per channel) PHA counts seem to be incorrect. 
+However, after grouping spectrum (e.g. by >20 counts per channel, using grppha) PHA counts seem to be incorrect. 
 This is most likely due to TZERO2=32768 key in the ungrouped PHA header. It seems that TZERO2=32768 may be an artifact.  
 
 A detailed comparison between FITS files produced by GDT v2.2.2 and GBM tools v1.1.1 is in [v222_v111_comparison](v222_v111_comparison) 
